@@ -6,16 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-    div{
-        padding: 50px 50px 50px 120px;
-        border: 1px solid black;
-        width:200px;
-        margin: 50px;
-       }
+
+    .card{
+        border:1px solid black;
+        width:300px
+}
+.card-title{
+    font-size:20px; 
+    font-weight:bold;
+}
+.place{
+    color:gray; 
+    font-size:14px;
+}
     </style> 
 </head>
 <body> 
-    <div style="display: flex;" >
+   <!--- <div style="display: flex;" >
     <div style="border-radius: 10px; padding: 50px; background-color: rgb(76, 0, 255);color:white; font-family: Arial, Helvetica, sans-serif;">
         <h3>PRE-BOOK OFFER</h3>
         <h4>Flat 15% OFF</h4>  
@@ -33,6 +40,41 @@
         <h4>Flat 10% OFF</h4>  
         <p>Valid from 12PM to 11:30PM <br> today <br> Booking required</p>
     </div>
-    </div>
+    </div> -->
+    <section>
+        <div style="display: flex;gap: 5px;">
+        <div class="card">
+            <img src="./css1.avif" width="300px">
+        
+        <div class="card-title">
+            Getting There by Rosan Joshi
+        </div>
+        <div class="place">
+            shilpa kala vedika : Hyderabad
+        </div>
+     </div>
+      <div class="card">
+            <img src="./css2.avif" width="300px">
+        
+        <div class="card-title">
+            Getting There by Rosan Joshi
+        </div>
+        <div class="place">
+            shilpa kala vedika : Hyderabad
+        </div>
+     </div>
+      <div class="card">
+            <img src="./css3.avif" width="300px">
+        
+        <div class="card-title">
+            Getting There by Rosan Joshi
+        </div>
+        <div class="place">
+            shilpa kala vedika : Hyderabad
+        </div>
+        </div>
+        </div>
+    </section>
+    
 </body>
 </html>
