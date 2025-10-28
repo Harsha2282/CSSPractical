@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="styles.css">
     <style>
 
-    .card{
-        border:1px solid black;
-        width:300px
-}
-.card-title{
-    font-size:20px; 
-    font-weight:bold;
-}
-.place{
-    color:gray; 
-    font-size:14px;
-}
+    .cards{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        grid-template-rows: auto;
+        margin:0px;
+        max-width: 1200px;
+        gap: 20px;
+        }
+    .cards img{
+        width: 100%;
+        height: auto;
+    }
+    img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
     </style> 
 </head>
 <body> 
@@ -42,37 +46,15 @@
     </div>
     </div> -->
     <section>
-        <div style="display: flex;gap: 5px;">
-        <div class="card">
-            <img src="./css1.avif" width="300px">
-        
-        <div class="card-title">
-            Getting There by Rosan Joshi
-        </div>
-        <div class="place">
-            shilpa kala vedika : Hyderabad
-        </div>
-     </div>
-      <div class="card">
-            <img src="./css2.avif" width="300px">
-        
-        <div class="card-title">
-            Getting There by Rosan Joshi
-        </div>
-        <div class="place">
-            shilpa kala vedika : Hyderabad
-        </div>
-     </div>
-      <div class="card">
-            <img src="./css3.avif" width="300px">
-        
-        <div class="card-title">
-            Getting There by Rosan Joshi
-        </div>
-        <div class="place">
-            shilpa kala vedika : Hyderabad
-        </div>
-        </div>
+        <div class="cards">
+       
+            <img src="./css1.avif">
+    
+      
+            <img src="./css2.avif">
+     
+      
+            <img src="./css3.avif">
         </div>
     </section>
     
